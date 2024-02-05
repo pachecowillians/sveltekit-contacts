@@ -10,7 +10,7 @@
 	</div>
 	<h2>Contacts</h2>
 	<div class="contacts">
-		{#each Array(20) as _, i (i)}
+		{#each Array(30) as _, i (i)}
 			<div class="contact-card">
 				<img class="avatar" src="contact.png" alt="Imagem Centralizada" />
 				<div class="contact-info">
@@ -39,8 +39,9 @@
 	}
 
 	.container h2 {
-		align-self: flex-start;
+		align-self: center;
 		margin-top: 2rem;
+		transform: translateX(-7rem);
 	}
 
 	.header {
@@ -50,10 +51,12 @@
 
 	.contacts {
 		margin-top: 2rem;
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: 1fr;
 		align-items: center;
-		width: 100%;
+		justify-content: center;
+		justify-items: center;
+		gap: 1rem 3rem;
 	}
 
 	.contact-card {
@@ -66,8 +69,9 @@
 		justify-content: center;
 		align-items: center;
 		gap: 1rem;
-		width: 100%;
-		margin: 0.5rem;
+		width: 21rem;
+		max-width: 23rem;
+		cursor: pointer;
 	}
 
 	.contact-card > img {
@@ -105,6 +109,21 @@
 		line-height: 0;
 	}
 
-	@media (max-width: 768px) {
+	@media screen and (min-width: 768px) {
+		.contacts {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		.container h2 {
+			transform: translateX(-19rem);
+		}
+	}
+
+	@media screen and (min-width: 1240px) {
+		.contacts {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		.container h2 {
+			transform: translateX(-31rem);
+		}
 	}
 </style>
