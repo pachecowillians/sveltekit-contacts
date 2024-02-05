@@ -4,7 +4,7 @@
 </script>
 
 <div class="button-container">
-	<a {href} class="circle-button">
+	<a {href} class="circle-button" data-sveltekit-preload-data="hover">
 		<img src={img_src} alt="Button icon" />
 	</a>
 </div>

@@ -5,7 +5,7 @@
 </script>
 
 <nav>
-	<a href="/">
+	<a href="/" data-sveltekit-preload-data="hover">
 		<img class="logo" src="/logo.svg" alt="Header logo" />
 	</a>
 </nav>
@@ -13,7 +13,7 @@
 	<h2>Contacts</h2>
 	<div class="contacts">
 		{#each users as user}
-			<a href={`/contacts/${user.id}`}>
+			<a href={`/contacts/${user.id}`} data-sveltekit-preload-data="tap">
 				<div class="contact-card">
 					<img class="avatar" src={user.image.replace('set4', 'set5')} alt="Imagem Centralizada" />
 					<div class="contact-info">

@@ -4,11 +4,11 @@
 	let user = data.user;
 </script>
 
-<a href="/contacts" class="back">
+<a href="/contacts" class="back" data-sveltekit-preload-data="hover">
 	<img src="/arrow_left.svg" alt="Header logo" />
 </a>
 <nav>
-	<a href="/">
+	<a href="/" data-sveltekit-preload-data="hover">
 		<img class="logo" src="/logo.svg" alt="Header logo" />
 	</a>
 </nav>
