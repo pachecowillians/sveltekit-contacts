@@ -1,3 +1,11 @@
+<div align="center">
+    <br/>
+    <img height="339px" src="./static/preview.gif"/>
+    <br>
+</div>
+
+<br/>
+
 # SvelteKit Contacts
 
 Welcome to SvelteKit Contacts! This project is a simple contacts list application built with SvelteKit.
