@@ -4,6 +4,10 @@
 	let users = data.users.users;
 </script>
 
+<svelte:head>
+    <title>Contacts | List</title> 
+</svelte:head>
+
 <nav>
 	<a href="/" data-sveltekit-preload-data="hover">
 		<img class="logo" src="/logo.svg" alt="Header logo" />
@@ -21,7 +25,7 @@
 						<div class="contact-email">{user.email}</div>
 					</div>
 					<a href={call_href} class="call-link">
-						<img src="call.svg" alt="Imagem Centralizada" />
+						<img src="call.svg" alt="Call button" />
 					</a>
 				</div>
 			</a>

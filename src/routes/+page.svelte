@@ -3,9 +3,13 @@
 	import '../styles/global.css';
 </script>
 
+<svelte:head>
+    <title>Contacts | Home</title> 
+</svelte:head>
+
 <div class="content-wrapper">
 	<div class="image-container">
-		<img src="logo.svg" alt="Imagem Centralizada" />
+		<img src="logo.svg" alt="Search button" />
 	</div>
 
 	<Button img_src="/search.svg" />

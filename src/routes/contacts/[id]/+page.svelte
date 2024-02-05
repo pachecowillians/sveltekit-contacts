@@ -4,8 +4,12 @@
 	let user = data.user;
 </script>
 
+<svelte:head>
+    <title>Contacts | {user.firstName} {user.lastName}</title> 
+</svelte:head>
+
 <a href="/contacts" class="back" data-sveltekit-preload-data="hover">
-	<img src="/arrow_left.svg" alt="Header logo" />
+	<img src="/arrow_left.svg" alt="Previous page" />
 </a>
 <nav>
 	<a href="/" data-sveltekit-preload-data="hover">
