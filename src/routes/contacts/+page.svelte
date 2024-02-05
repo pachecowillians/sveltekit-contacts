@@ -89,7 +89,7 @@
 	.contact-name {
 		font-size: 1.2rem;
 		font-weight: bold;
-		margin-bottom: 10px;
+		margin-bottom: 0.2rem;
 		color: var(--primary-color);
 	}
 
@@ -98,7 +98,7 @@
 	}
 
 	.contact-card img:last-child {
-		padding: 0.2rem;
+		padding: 0 0.2rem;
 		line-height: 0;
 	}
 
