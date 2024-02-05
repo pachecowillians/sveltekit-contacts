@@ -1,21 +1,20 @@
 <script>
 	import Button from '$lib/button.svelte';
-	export let data
-	let user = data.user
+	export let data;
+	let user = data.user;
 </script>
 
+<a href="/contacts" class="back">
+	<img src="/arrow_left.svg" alt="Header logo" />
+</a>
 <nav>
-	<a href="/contacts">
-		<img class="back" src="/arrow_left.svg" alt="Header logo" />
-	</a>
 	<a href="/">
 		<img class="logo" src="/logo.svg" alt="Header logo" />
 	</a>
-	<div />
 </nav>
 <main>
 	<div class="profile-picture">
-		<img src={user.image.replace("set4", "set5")} alt="Contact avatar" />
+		<img src={user.image.replace('set4', 'set5')} alt="Contact avatar" />
 	</div>
 	<div class="profile-name">{user.firstName} {user.lastName}</div>
 	<div class="profile-email">{user.email}</div>
@@ -25,6 +24,9 @@
 <style>
 	.back {
 		height: 1.7rem;
+		position: absolute;
+		top: 3.4rem;
+		left: 2.5rem;
 	}
 	.logo {
 		width: 7rem;
@@ -35,7 +37,7 @@
 		margin-bottom: 20px;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		width: 80vw;
 	}
@@ -54,7 +56,7 @@
 		margin: 0 auto;
 		overflow: hidden;
 	}
-	img {
+	.profile-picture img {
 		border-radius: 50%;
 		width: 100%;
 	}
@@ -75,11 +77,17 @@
 		nav {
 			width: 75vw;
 		}
+		.back {
+			left: 7rem;
+		}
 	}
 
 	@media screen and (min-width: 1240px) {
 		nav {
 			width: 65vw;
+		}
+		.back {
+			left: 10rem;
 		}
 	}
 </style>
