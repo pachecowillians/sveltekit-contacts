@@ -8,7 +8,9 @@
 	</div>
 
 	<div class="button-container">
-		<button>Clique Aqui</button>
+		<button class="circle-button">
+			<img src="search.svg" alt="Imagem Centralizada" />
+		</button>
 	</div>
 </div>
 
@@ -38,12 +40,16 @@
 		text-align: center;
 	}
 
-	button {
-		padding: 10px 20px;
-		background-color: #0074d9;
-		color: #ffffff;
+	button.circle-button {
+		padding: 1.5rem;
+		background-color: var(--secondary-color);
 		border: none;
-		border-radius: 5px;
+		border-radius: 50%;
 		cursor: pointer;
+	}
+
+	img {
+		max-width: 100%;
+		max-height: 100%;
 	}
 </style>
