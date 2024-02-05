@@ -4,7 +4,7 @@
 
 <div class="content-wrapper">
 	<div class="image-container">
-		<img src="favicon.png" alt="Imagem Centralizada" />
+		<img src="logo.svg" alt="Imagem Centralizada" />
 	</div>
 
 	<div class="button-container">
@@ -30,9 +30,8 @@
 		flex-grow: 1;
 	}
 
-	img {
-		max-width: 100%;
-		max-height: 100%;
+	.image-container img {
+        height: 20vh;
 	}
 
 	.button-container {
