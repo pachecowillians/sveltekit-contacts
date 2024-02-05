@@ -22,7 +22,6 @@
 	main h2 {
 		align-self: center;
 		margin-top: 2rem;
-		transform: translateX(-7rem);
 		color: var(--primary-color);
 	}
 
@@ -82,17 +81,11 @@
 		.contacts {
 			grid-template-columns: repeat(2, 1fr);
 		}
-		main h2 {
-			transform: translateX(-19rem);
-		}
 	}
 
 	@media screen and (min-width: 1240px) {
 		.contacts {
 			grid-template-columns: repeat(3, 1fr);
-		}
-		main h2 {
-			transform: translateX(-31rem);
 		}
 	}
 </style>
