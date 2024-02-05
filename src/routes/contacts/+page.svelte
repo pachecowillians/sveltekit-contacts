@@ -1,7 +1,7 @@
 <script>
 	let call_href = 'javascript:void(0)';
 	export let data;
-	console.log(data.users.users);
+	console.log(data.users.data);
 </script>
 
 <nav>
@@ -12,12 +12,12 @@
 <main>
 	<h2>Contacts</h2>
 	<div class="contacts">
-		{#each data.users.users as user}
+		{#each data.users.data as user}
 			<a href={`/contacts/${user.id}`}>
 				<div class="contact-card">
-					<img class="avatar" src="https://i.pravatar.cc/300" alt="Imagem Centralizada" />
+					<img class="avatar" src={user.avatar} alt="Imagem Centralizada" />
 					<div class="contact-info">
-						<div class="contact-name">{user.firstName} {user.lastName}</div>
+						<div class="contact-name">{user.first_name} {user.last_name}</div>
 						<div class="contact-email">{user.email}</div>
 					</div>
 					<a href={call_href}>
@@ -78,7 +78,7 @@
 	}
 
 	.contact-card > img {
-		width: 5rem;
+		width: 4rem;
 		border-radius: 50%;
 	}
 
