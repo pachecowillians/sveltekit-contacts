@@ -1,38 +1,64 @@
-# create-svelte
+# SvelteKit Contacts
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Welcome to SvelteKit Contacts! This project is a simple contacts list application built with SvelteKit.
 
-## Creating a project
+## Getting Started
 
-If you're seeing this, you've probably already done this step. Congrats!
+### Prerequisites
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Before you begin, ensure you have the following installed:
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- Node.js
+- npm (Node Package Manager)
 
-## Developing
+### Installation
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/pachecowillians/sveltekit-contacts.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd sveltekit-contacts
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+### Running the Application
+
+To run the application locally, use the following command:
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+This will start the development server, and you can access the application at [http://localhost:5000](http://localhost:5000).
 
-To create a production version of your app:
+### Linting and Formatting
+
+To ensure code quality, we use ESLint and Prettier. Run the following commands to lint and format the code:
+
+```bash
+# Run ESLint
+npm run lint
+
+# Run Prettier
+npm run format
+```
+
+### Building for Production
+
+To build the application for production, use the following command:
 
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+The production-ready files will be generated in the `build` directory.
