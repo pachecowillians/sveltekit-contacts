@@ -3,7 +3,9 @@
 
 <div class="container">
 	<div class="header">
-		<img class="image" src="logo.svg" alt="Imagem Centralizada" />
+		<a href="/">
+			<img class="image" src="logo.svg" alt="Imagem Centralizada" />
+		</a>
 	</div>
 	<h2>Contacts</h2>
 	<!-- <div class="contacts">
