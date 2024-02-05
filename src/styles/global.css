@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Estilo global */
+:root {
+	--background-color: #fcfefe;
+	--primary-color: #193441;
+	--secondary-color: #eeeeee;
+}
+
+body {
+	background-color: var(--background-color);
+	font-family: Arial, sans-serif;
+}

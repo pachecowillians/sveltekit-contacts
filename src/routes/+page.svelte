@@ -1,4 +1,6 @@
-<script></script>
+<script>
+	import '../styles/global.css';
+</script>
 
 <div class="content-wrapper">
 	<div class="image-container">
