@@ -96,16 +96,7 @@
 	}
 
 	.call {
-		width: 1.5rem;
-		text-align: center;
-		align-self: center;
-		justify-self: center;
-	}
-
-	.call {
-		padding: 0;
-		margin: 0;
-		list-style: none;
+		padding: 0.2rem;
 		line-height: 0;
 	}
 
