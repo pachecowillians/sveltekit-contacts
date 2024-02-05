@@ -1,7 +1,7 @@
 <script>
 	let call_href = 'javascript:void(0)';
 	export let data;
-	let users = data.users.users
+	let users = data.users.users;
 </script>
 
 <nav>
@@ -15,7 +15,7 @@
 		{#each users as user}
 			<a href={`/contacts/${user.id}`}>
 				<div class="contact-card">
-					<img class="avatar" src={user.image.replace("set4", "set5")} alt="Imagem Centralizada" />
+					<img class="avatar" src={user.image.replace('set4', 'set5')} alt="Imagem Centralizada" />
 					<div class="contact-info">
 						<div class="contact-name">{user.firstName} {user.lastName}</div>
 						<div class="contact-email">{user.email}</div>
@@ -109,7 +109,7 @@
 		width: 2rem;
 	}
 
-	.call-link{
+	.call-link {
 		line-height: 0;
 	}
 

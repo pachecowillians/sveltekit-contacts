@@ -43,7 +43,7 @@
 		justify-content: center;
 		gap: 2rem;
 		flex: 1;
-        color: var(--primary-color);
+		color: var(--primary-color);
 	}
 
 	main span {
@@ -53,6 +53,6 @@
 
 	main span:first-child {
 		border-right: 2px solid var(--primary-color);
-        padding: 2rem;
+		padding: 2rem;
 	}
 </style>

@@ -2,7 +2,7 @@ export const load = async ({ fetch }) => {
 	const res = await fetch('https://dummyjson.com/users?limit=50');
 	const users = await res.json();
 
-    if (res.ok) {
+	if (res.ok) {
 		return {
 			users
 		};
