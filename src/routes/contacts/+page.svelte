@@ -42,6 +42,7 @@
 		align-self: center;
 		margin-top: 2rem;
 		transform: translateX(-7rem);
+		color: var(--primary-color);
 	}
 
 	.header {
@@ -89,10 +90,11 @@
 		font-size: 1.2rem;
 		font-weight: bold;
 		margin-bottom: 10px;
+		color: var(--primary-color);
 	}
 
 	.contact-email {
-		color: #888;
+		color: var(--secondary-text-color);
 	}
 
 	.call {

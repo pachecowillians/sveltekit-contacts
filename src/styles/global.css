@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    user-select: none;
+	user-select: none;
 }
 
 /* Estilo global */
@@ -10,6 +10,7 @@
 	--background-color: #fcfefe;
 	--primary-color: #193441;
 	--secondary-color: #eeeeee;
+	--secondary-text-color: #888888;
 }
 
 body {
