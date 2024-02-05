@@ -4,7 +4,7 @@
 	<h2>Contacts</h2>
 	<div class="contacts">
 		{#each Array(30) as _, i (i)}
-			<a href="/contact">
+			<a href={`/contacts/${i}`}>
 				<div class="contact-card">
 					<img class="avatar" src="contact.png" alt="Imagem Centralizada" />
 					<div class="contact-info">
