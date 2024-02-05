@@ -56,7 +56,7 @@
 	}
 
 	.contact-card {
-		background-color: #ffffff;
+		background-color: var(--background-color);
 		border-radius: 10px;
 		padding: 0.5rem 1rem;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

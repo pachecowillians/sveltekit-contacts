@@ -63,7 +63,7 @@
 	}
 	.profile-email {
 		font-size: 1rem;
-		color: #777777;
+		color: var(--secondary-text-color);
 		margin-top: 0.5rem;
 		margin-bottom: 3rem;
 	}
