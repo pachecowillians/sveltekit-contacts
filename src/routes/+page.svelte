@@ -9,8 +9,8 @@
 
 	<div class="button-container">
 		<a href="/contacts" class="circle-button">
-            <img src="search.svg" alt="Imagem Centralizada" />
-        </a>
+			<img src="search.svg" alt="Imagem Centralizada" />
+		</a>
 	</div>
 </div>
 
@@ -28,10 +28,6 @@
 		justify-content: center;
 		align-items: center;
 		flex-grow: 1;
-	}
-
-	.image-container img {
-        height: 20vh;
 	}
 
 	.button-container {
