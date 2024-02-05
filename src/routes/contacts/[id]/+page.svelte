@@ -6,12 +6,12 @@
 		{#each Array(30) as _, i (i)}
 			<a href="/contact">
 				<div class="contact-card">
-					<img class="avatar" src="contact.png" alt="Imagem Centralizada" />
+					<img class="avatar" src="/contact.png" alt="Imagem Centralizada" />
 					<div class="contact-info">
 						<div class="contact-name">Jessie McGrath</div>
 						<div class="contact-email">mcgrj@zmail.com</div>
 					</div>
-					<img src="call.svg" alt="Imagem Centralizada" />
+					<img src="/call.svg" alt="Imagem Centralizada" />
 				</div>
 			</a>
 		{/each}
