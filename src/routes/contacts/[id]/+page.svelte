@@ -20,7 +20,7 @@
 		align-items: center;
 		flex: 1;
 		justify-content: center;
-		transform: translateY(-4rem);
+		padding-bottom: 4rem;
 	}
 	.profile-picture {
 		border-radius: 50%;
