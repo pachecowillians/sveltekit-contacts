@@ -1,4 +1,5 @@
 <script>
+	import '../../styles/global.css';
 </script>
 
 <div class="container">
@@ -8,12 +9,20 @@
 		</a>
 	</div>
 	<h2>Contacts</h2>
-	<!-- <div class="contacts">
-		<div class="contact-card">
-			<div class="contact-name">Jessie McGrath</div>
-			<div class="contact-email">mcgrj@zmail.com</div>
-		</div>
-	</div> -->
+	<div class="contacts">
+		{#each Array(20) as _, i (i)}
+			<div class="contact-card">
+				<img class="avatar" src="contact.png" alt="Imagem Centralizada" />
+				<div class="contact-info">
+					<div class="contact-name">Jessie McGrath</div>
+					<div class="contact-email">mcgrj@zmail.com</div>
+				</div>
+				<a href="/contact" class="call">
+					<img src="call.svg" alt="Imagem Centralizada" />
+				</a>
+			</div>
+		{/each}
+	</div>
 </div>
 
 <style>
@@ -40,16 +49,36 @@
 	}
 
 	.contacts {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 20px;
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
 	}
 
 	.contact-card {
 		background-color: #ffffff;
 		border-radius: 10px;
-		padding: 20px;
+		padding: 0.5rem 1rem;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		width: 100%;
+		margin: 0.5rem;
+	}
+
+	.contact-card > img {
+		width: 5rem;
+		border-radius: 50%;
+	}
+
+	.contact-card .contact-info {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
 	}
 
 	.contact-name {
@@ -62,9 +91,20 @@
 		color: #888;
 	}
 
+	.call {
+		width: 1.5rem;
+		text-align: center;
+		align-self: center;
+		justify-self: center;
+	}
+
+	.call {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		line-height: 0;
+	}
+
 	@media (max-width: 768px) {
-		.contacts {
-			grid-template-columns: repeat(2, 1fr);
-		}
 	}
 </style>
