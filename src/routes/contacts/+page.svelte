@@ -68,6 +68,11 @@
 		width: 21rem;
 		max-width: 23rem;
 		cursor: pointer;
+		transition: all ease-in-out 0.2s;
+	}
+
+	.contact-card:hover {
+		transform: scale(1.05);
 	}
 
 	.contact-card > img {

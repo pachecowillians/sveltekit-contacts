@@ -60,12 +60,14 @@
 		font-size: 2rem;
 		font-weight: bold;
 		margin-top: 3rem;
+		user-select: text;
 	}
 	.profile-email {
 		font-size: 1rem;
 		color: var(--secondary-text-color);
 		margin-top: 0.5rem;
 		margin-bottom: 3rem;
+		user-select: text;
 	}
 	@media screen and (min-width: 768px) {
 		nav {

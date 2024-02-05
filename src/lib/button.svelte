@@ -13,6 +13,11 @@
 	.button-container {
 		margin-bottom: 10vh;
 		text-align: center;
+		transition: all ease-in-out 0.2s;
+	}
+
+	.button-container:hover {
+		transform: scale(1.1);
 	}
 
 	a.circle-button {
