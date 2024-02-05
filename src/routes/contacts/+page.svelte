@@ -54,7 +54,7 @@
 		align-items: center;
 		justify-content: center;
 		justify-items: center;
-		gap: 1rem 3rem;
+		gap: 2rem 3rem;
 	}
 
 	.contact-card {
