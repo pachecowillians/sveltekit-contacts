@@ -1,7 +1,7 @@
 <script>
 	import Button from '$lib/button.svelte';
 	export let data
-	let user = data.user.data
+	let user = data.user
 </script>
 
 <nav>
@@ -15,9 +15,9 @@
 </nav>
 <main>
 	<div class="profile-picture">
-		<img src={user.avatar} alt="Contact avatar" />
+		<img src={user.image.replace("set4", "set5")} alt="Contact avatar" />
 	</div>
-	<div class="profile-name">{user.first_name} {user.last_name}</div>
+	<div class="profile-name">{user.firstName} {user.lastName}</div>
 	<div class="profile-email">{user.email}</div>
 	<Button img_src="/call.svg" href="javascript:void(0)" />
 </main>
