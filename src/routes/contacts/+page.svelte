@@ -1,6 +1,7 @@
 <script>
 	let call_href = 'javascript:void(0)';
 	export let data;
+	let users = data.users.users
 </script>
 
 <nav>
@@ -11,12 +12,12 @@
 <main>
 	<h2>Contacts</h2>
 	<div class="contacts">
-		{#each data.users.data as user}
+		{#each users as user}
 			<a href={`/contacts/${user.id}`}>
 				<div class="contact-card">
-					<img class="avatar" src={user.avatar} alt="Imagem Centralizada" />
+					<img class="avatar" src={user.image.replace("set4", "set5")} alt="Imagem Centralizada" />
 					<div class="contact-info">
-						<div class="contact-name">{user.first_name} {user.last_name}</div>
+						<div class="contact-name">{user.firstName} {user.lastName}</div>
 						<div class="contact-email">{user.email}</div>
 					</div>
 					<a href={call_href} class="call-link">
