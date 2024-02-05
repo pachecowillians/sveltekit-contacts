@@ -8,7 +8,7 @@
 	</div>
 	<div class="profile-name">Ethelyn Ferreras</div>
 	<div class="profile-email">sroots85@wunderground.com</div>
-	<Button img_src="/call.svg" />
+	<Button img_src="/call.svg" href="javascript:void(0)"/>
 </main>
 
 <style>

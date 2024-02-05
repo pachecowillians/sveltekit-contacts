@@ -1,9 +1,10 @@
 <script>
 	export let img_src = 'search.svg';
+	export let href = '/contacts';
 </script>
 
 <div class="button-container">
-	<a href="/contacts" class="circle-button">
+	<a {href} class="circle-button">
 		<img src={img_src} alt="Button icon" />
 	</a>
 </div>
