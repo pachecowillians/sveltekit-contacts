@@ -1,4 +1,6 @@
-<script></script>
+<script>
+	let call_href = 'javascript:void(0)';
+</script>
 
 <main>
 	<h2>Contacts</h2>
@@ -11,7 +13,9 @@
 						<div class="contact-name">Jessie McGrath</div>
 						<div class="contact-email">mcgrj@zmail.com</div>
 					</div>
-					<img src="call.svg" alt="Imagem Centralizada" />
+					<a href={call_href}>
+						<img src="call.svg" alt="Imagem Centralizada" />
+					</a>
 				</div>
 			</a>
 		{/each}
@@ -50,7 +54,7 @@
 		cursor: pointer;
 	}
 
-	.contact-card img:first-child {
+	.contact-card > img {
 		width: 5rem;
 		border-radius: 50%;
 	}
@@ -72,9 +76,10 @@
 		color: var(--secondary-text-color);
 	}
 
-	.contact-card img:last-child {
+	.contact-card a img {
 		padding: 0 0.2rem;
 		line-height: 0;
+		width: 2rem;
 	}
 
 	@media screen and (min-width: 768px) {
