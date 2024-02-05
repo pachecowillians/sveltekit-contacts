@@ -5,22 +5,22 @@
 <div class="container">
 	<div class="header">
 		<a href="/">
-			<img class="image" src="logo.svg" alt="Imagem Centralizada" />
+			<img src="logo.svg" alt="Imagem Centralizada" />
 		</a>
 	</div>
 	<h2>Contacts</h2>
 	<div class="contacts">
 		{#each Array(30) as _, i (i)}
-			<div class="contact-card">
-				<img class="avatar" src="contact.png" alt="Imagem Centralizada" />
-				<div class="contact-info">
-					<div class="contact-name">Jessie McGrath</div>
-					<div class="contact-email">mcgrj@zmail.com</div>
-				</div>
-				<a href="/contact" class="call">
+			<a href="/contact">
+				<div class="contact-card">
+					<img class="avatar" src="contact.png" alt="Imagem Centralizada" />
+					<div class="contact-info">
+						<div class="contact-name">Jessie McGrath</div>
+						<div class="contact-email">mcgrj@zmail.com</div>
+					</div>
 					<img src="call.svg" alt="Imagem Centralizada" />
-				</a>
-			</div>
+				</div>
+			</a>
 		{/each}
 	</div>
 </div>
@@ -33,7 +33,7 @@
 		padding: 2rem;
 	}
 
-	.image {
+	.header img {
 		width: 7rem;
 		margin-top: 1rem;
 	}
@@ -75,7 +75,7 @@
 		cursor: pointer;
 	}
 
-	.contact-card > img {
+	.contact-card img:first-child {
 		width: 5rem;
 		border-radius: 50%;
 	}
@@ -97,7 +97,7 @@
 		color: var(--secondary-text-color);
 	}
 
-	.call {
+	.contact-card img:last-child {
 		padding: 0.2rem;
 		line-height: 0;
 	}
