@@ -1,4 +1,5 @@
 <script>
+	import Button from '$lib/button.svelte';
 	import '../styles/global.css';
 </script>
 
@@ -7,11 +8,7 @@
 		<img src="logo.svg" alt="Imagem Centralizada" />
 	</div>
 
-	<div class="button-container">
-		<a href="/contacts" class="circle-button">
-			<img src="search.svg" alt="Imagem Centralizada" />
-		</a>
-	</div>
+	<Button img_src="/search.svg" />
 </div>
 
 <style>
@@ -28,20 +25,6 @@
 		justify-content: center;
 		align-items: center;
 		flex-grow: 1;
-	}
-
-	.button-container {
-		margin-bottom: 10vh;
-		text-align: center;
-	}
-
-	a.circle-button {
-		display: inline-block;
-		padding: 1.5rem;
-		background-color: var(--secondary-color);
-		border: none;
-		border-radius: 50%;
-		cursor: pointer;
 	}
 
 	img {
