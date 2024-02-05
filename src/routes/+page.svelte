@@ -8,9 +8,9 @@
 	</div>
 
 	<div class="button-container">
-		<button class="circle-button">
-			<img src="search.svg" alt="Imagem Centralizada" />
-		</button>
+		<a href="/contacts" class="circle-button">
+            <img src="search.svg" alt="Imagem Centralizada" />
+        </a>
 	</div>
 </div>
 
@@ -40,7 +40,8 @@
 		text-align: center;
 	}
 
-	button.circle-button {
+	a.circle-button {
+		display: inline-block;
 		padding: 1.5rem;
 		background-color: var(--secondary-color);
 		border: none;
