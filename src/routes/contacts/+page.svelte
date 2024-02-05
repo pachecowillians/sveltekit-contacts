@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-    <title>Contacts | List</title> 
+	<title>Contacts | List</title>
 </svelte:head>
 
 <nav>

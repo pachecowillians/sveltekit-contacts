@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-    <title>Contacts | {user.firstName} {user.lastName}</title> 
+	<title>Contacts | {user.firstName} {user.lastName}</title>
 </svelte:head>
 
 <a href="/contacts" class="back" data-sveltekit-preload-data="hover">

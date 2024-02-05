@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-    <title>Contacts | Home</title> 
+	<title>Contacts | Home</title>
 </svelte:head>
 
 <div class="content-wrapper">
