@@ -2,6 +2,11 @@
 	let call_href = 'javascript:void(0)';
 </script>
 
+<nav>
+	<a href="/">
+		<img class="logo" src="/logo.svg" alt="Header logo" />
+	</a>
+</nav>
 <main>
 	<h2>Contacts</h2>
 	<div class="contacts">
@@ -23,12 +28,23 @@
 </main>
 
 <style>
+	.logo {
+		width: 7rem;
+	}
+	nav {
+		margin-top: 1rem;
+		text-align: center;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
 	main h2 {
 		align-self: center;
 		margin-top: 2rem;
 		color: var(--primary-color);
 	}
-
 	.contacts {
 		margin-top: 2rem;
 		display: grid;

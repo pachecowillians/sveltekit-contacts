@@ -2,6 +2,15 @@
 	import Button from '$lib/button.svelte';
 </script>
 
+<nav>
+	<a href="/contacts">
+		<img class="back" src="/arrow_left.svg" alt="Header logo" />
+	</a>
+	<a href="/">
+		<img class="logo" src="/logo.svg" alt="Header logo" />
+	</a>
+	<div />
+</nav>
 <main>
 	<div class="profile-picture">
 		<img src="/contact.png" alt="Imagem Centralizada" />
@@ -12,6 +21,22 @@
 </main>
 
 <style>
+	.back {
+		height: 1.7rem;
+	}
+	.logo {
+		width: 7rem;
+	}
+	nav {
+		margin-top: 1rem;
+		text-align: center;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 80vw;
+	}
 	main {
 		text-align: center;
 		min-height: 100vh;
@@ -41,5 +66,16 @@
 		color: #777777;
 		margin-top: 0.5rem;
 		margin-bottom: 3rem;
+	}
+	@media screen and (min-width: 768px) {
+		nav {
+			width: 75vw;
+		}
+	}
+
+	@media screen and (min-width: 1240px) {
+		nav {
+			width: 65vw;
+		}
 	}
 </style>
