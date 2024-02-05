@@ -1,5 +1,7 @@
 <script>
 	import Button from '$lib/button.svelte';
+	export let data
+	let user = data.user.data
 </script>
 
 <nav>
@@ -13,10 +15,10 @@
 </nav>
 <main>
 	<div class="profile-picture">
-		<img src="/contact.png" alt="Imagem Centralizada" />
+		<img src={user.avatar} alt="Contact avatar" />
 	</div>
-	<div class="profile-name">Ethelyn Ferreras</div>
-	<div class="profile-email">sroots85@wunderground.com</div>
+	<div class="profile-name">{user.first_name} {user.last_name}</div>
+	<div class="profile-email">{user.email}</div>
 	<Button img_src="/call.svg" href="javascript:void(0)" />
 </main>
 
@@ -48,12 +50,12 @@
 		padding-bottom: 4rem;
 	}
 	.profile-picture {
-		border-radius: 50%;
 		width: 12rem;
 		margin: 0 auto;
 		overflow: hidden;
 	}
 	img {
+		border-radius: 50%;
 		width: 100%;
 	}
 	.profile-name {

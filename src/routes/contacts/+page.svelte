@@ -1,7 +1,6 @@
 <script>
 	let call_href = 'javascript:void(0)';
 	export let data;
-	console.log(data.users.data);
 </script>
 
 <nav>
@@ -20,7 +19,7 @@
 						<div class="contact-name">{user.first_name} {user.last_name}</div>
 						<div class="contact-email">{user.email}</div>
 					</div>
-					<a href={call_href}>
+					<a href={call_href} class="call-link">
 						<img src="call.svg" alt="Imagem Centralizada" />
 					</a>
 				</div>
@@ -107,6 +106,10 @@
 		padding: 0 0.2rem;
 		line-height: 0;
 		width: 2rem;
+	}
+
+	.call-link{
+		line-height: 0;
 	}
 
 	@media screen and (min-width: 768px) {
