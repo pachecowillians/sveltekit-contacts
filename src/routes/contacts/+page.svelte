@@ -1,5 +1,7 @@
 <script>
 	let call_href = 'javascript:void(0)';
+	export let data;
+	console.log(data.users.users);
 </script>
 
 <nav>
@@ -10,13 +12,13 @@
 <main>
 	<h2>Contacts</h2>
 	<div class="contacts">
-		{#each Array(30) as _, i (i)}
-			<a href={`/contacts/${i}`}>
+		{#each data.users.users as user}
+			<a href={`/contacts/${user.id}`}>
 				<div class="contact-card">
-					<img class="avatar" src="contact.png" alt="Imagem Centralizada" />
+					<img class="avatar" src="https://i.pravatar.cc/300" alt="Imagem Centralizada" />
 					<div class="contact-info">
-						<div class="contact-name">Jessie McGrath</div>
-						<div class="contact-email">mcgrj@zmail.com</div>
+						<div class="contact-name">{user.firstName} {user.lastName}</div>
+						<div class="contact-email">{user.email}</div>
 					</div>
 					<a href={call_href}>
 						<img src="call.svg" alt="Imagem Centralizada" />
@@ -65,7 +67,7 @@
 		justify-content: center;
 		align-items: center;
 		gap: 1rem;
-		width: 21rem;
+		width: 22rem;
 		max-width: 23rem;
 		cursor: pointer;
 		transition: all ease-in-out 0.2s;
@@ -95,6 +97,10 @@
 
 	.contact-email {
 		color: var(--secondary-text-color);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 12rem;
 	}
 
 	.contact-card a img {
